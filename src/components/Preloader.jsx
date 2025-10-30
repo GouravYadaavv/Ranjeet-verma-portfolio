@@ -49,7 +49,7 @@ const PreloaderWrapper = ({ children }) => {
                   alt="Loading..."
                   width={400}
                   height={400}
-                  className="object-contain w-[370px] md:w-[400px] lg:w-[500px] h-auto"
+                  className="object-contain w-[370px] md:w-[400px] lg:w-[700px] h-auto"
                   onLoad={() => setGifLoaded(true)} // 🔹 GIF load hone ke baad timer start
                   unoptimized
                   priority

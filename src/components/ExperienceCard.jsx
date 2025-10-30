@@ -27,7 +27,7 @@ const experiences = [
   },
   {
     border: "/Borderexp1.png",
-    titleImg: "/explogo41.png",
+    titleImg: "/Explogo41.png",
     date: "Nov 2024 – Jan 2025",
     description:
       "Worked on designing engaging visual content for digital and print platforms, including social media graphics, promotional materials, and website visuals. Collaborated with the marketing team to create creative campaigns that enhanced brand visibility and customer engagement.",
