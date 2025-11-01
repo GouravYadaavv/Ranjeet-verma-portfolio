@@ -18,7 +18,7 @@ const PreloaderWrapper = ({ children }) => {
     if (gifLoaded) {
       const timer = setTimeout(() => {
         setIsVisible(false);
-      }, 6800); // 🕒 GIF ka duration (ms)
+      }, 7500); // 🕒 GIF ka duration (ms)
       return () => clearTimeout(timer);
     }
   }, [gifLoaded]);

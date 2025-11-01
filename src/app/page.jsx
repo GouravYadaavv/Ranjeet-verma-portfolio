@@ -41,7 +41,7 @@ export default function Page() {
     const gifTimer = setTimeout(() => {
       gifPlayed = true;
       if (pageLoaded) setLoading(false);
-    }, 6800);
+    }, 7500);
 
     // ✅ Cleanup fix
     return () => {
