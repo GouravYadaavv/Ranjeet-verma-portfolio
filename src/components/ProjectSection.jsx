@@ -54,7 +54,7 @@ export default function ProjectsSection() {
     <>
       <section
         id="projects"
-        className="max-w-6xl mx-auto px-4 py-10 md:py-0 md:mt-10 "
+        className="max-w-6xl mx-auto px-4 py-16  md:py-30 md:mt-10 "
       >
         <h2 className="text-5xl font-bold mb-8 text-center text-black">
           <span className="font-light">My</span>{" "}

@@ -12,7 +12,7 @@ const paragraphs = [
 const AboutSection1 = () => {
   return (
     <>
-      <section id="about" className="w-full bg-white text-black py-16 px-5 md:px-20">
+      <section id="about" className="w-full bg-white text-black py-16 md:py-30  px-5 md:px-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Column: Image */}
           <div className="relative w-full p-4">
