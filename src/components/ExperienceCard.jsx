@@ -38,7 +38,7 @@ const ExperienceCard = () => {
   return (
     <section className="w-full  flex flex-col items-center mb-10 px-0 bg-[#1E1E1E] text-white">
       <h1 className="text-3xl md:text-5xl font-semibold mb-12 tracking-wide">
-        <span className="font-light">My</span> <span className="font-bold">Expression</span>
+        <span className="font-light">My</span> <span className="font-bold">Experience</span>
       </h1>
 
       <div className="flex flex-col items-center gap-12 w-full">
