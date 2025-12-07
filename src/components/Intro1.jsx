@@ -2,9 +2,9 @@ export default function Intro1() {
   return (
     <section className="flex flex-col md:flex-row items-start justify-between px-5 md:px-9 py-3 md:py-7 bg-white text-gray-900 gap-0 md:gap-2">
       {/* Left Text - 30% */}
-      <div className="md:w-[30%] mb-4 md:mb-8">
+      <div className="md:w-[30%] mb-3 md:mb-8">
         <h2 className="text-xl  font-medium tracking-wide">
-          Welcome to my creative journey!
+          Welcome to my creative journey! qwertyuit
         </h2>
       </div>
 

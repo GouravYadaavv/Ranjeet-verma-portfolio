@@ -16,7 +16,7 @@ export default function Intro() {
       </div>
 
       {/* Name PNG */}
-      <div className="relative w-[135px] h-[22px] mb-2 ">
+      <div className="relative w-[140px] h-[28px] mb-2 ">
         <Image
           src="/Ranjeet Verma.svg"
           alt="Ranjeet Verma"
@@ -26,7 +26,7 @@ export default function Intro() {
       </div>
 
       {/* Profession PNG */}
-      <div className="relative w-[236px] h-[36px] mt-2">
+      <div className="relative w-[240px] h-[42px] mt-2">
         <Image
           src="/Ui Designer.svg"
           alt="UI/UX Designer"
