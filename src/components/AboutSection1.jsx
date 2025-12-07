@@ -13,9 +13,9 @@ const AboutSection1 = () => {
   return (
     <>
       <section id="about" className="w-full bg-white text-black py-16 md:py-30  px-5 md:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
           {/* Left Column: Image */}
-          <div className="relative w-full p-4">
+          <div className="relative w-full -ml-3 md:-ml-16">
             <Image
               src="/Profile Pic[2].png"
               alt="Sketch illustration of Ranjeet Verma"
@@ -34,7 +34,7 @@ const AboutSection1 = () => {
           </div>
 
           {/* Right Column: Text Content */}
-          <div className="w-full">
+          <div className="w-full md:ml-5 lg:ml-10">
             <h2 className="text-5xl font-bold mb-10">
               <span className="font-light">About </span>
               <span className="font-bold">Me</span>

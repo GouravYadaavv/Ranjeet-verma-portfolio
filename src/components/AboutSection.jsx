@@ -51,7 +51,8 @@ const AboutSection = () => {
     <section id="about" className="w-full bg-black text-black py-16 px-10 md:px-20 ">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Column: Image */}
-        <div className=" relative w-full p-4">
+        <div className="relative w-full p-4 -ml-10 md:-ml-16">
+
           <Image
             src="/me.png" // Image path from 'public' folder
             alt="Sketch illustration of Ranjeet Verma"
@@ -70,7 +71,8 @@ const AboutSection = () => {
         </div>
 
         {/* Right Column: Text Content */}
-        <div className="w-full">
+        <div className="w-full md:ml-10 lg:ml-16">
+
           <h2 className="text-5xl font-bold mb-10"><span className='font-light'>About </span><span className='font-bold'>Me</span></h2>
 
           <div className="space-y-6 text-gray-700 text-lg md:text-xl leading-relaxed">

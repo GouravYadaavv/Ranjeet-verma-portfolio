@@ -19,7 +19,7 @@ const Skill = () => {
   ];
 
   return (
-    <section className="w-full bg-white flex flex-col items-center justify-center py-16 sm:py-30 px-4">
+    <section className="w-full bg-white flex flex-col items-center justify-center py-16 sm:py-40 px-4">
       {/* --- Heading --- */}
       <h2 className="text-5xl sm:text-5xl lg:text-5xl font-extrabold text-black mb-12 sm:mb-22 tracking-tight">
         <span className="font-light">My </span><span className="font-bold">Skills</span>
@@ -33,7 +33,7 @@ const Skill = () => {
           sm:grid-cols-3 
           md:grid-cols-4 
           lg:grid-cols-5 
-          gap-6 sm:gap-8 md:gap-10
+          gap-10 sm:gap-10 md:gap-12
           justify-items-center
           w-full max-w-7xl
         "
@@ -83,7 +83,7 @@ const LogoCard = ({ item }) => {
       ></div>
 
       {/* Logo + Text */}
-      <div className="relative z-10 flex flex-col items-center space-y-2">
+      <div className="relative z-10 flex flex-col items-center space-y-2 ">
         <Image
           src={item.logo}
           alt="ranjeet verma"
@@ -96,7 +96,7 @@ const LogoCard = ({ item }) => {
           alt="ranjeet verma"
           width={item.textW}
           height={item.textH}
-          className="transition-all duration-500 group-hover:invert"
+          className="transition-all duration-500 group-hover:invert scale-85"
         />
       </div>
     </div>

@@ -54,14 +54,14 @@ export default function ProjectsSection() {
     <>
       <section
         id="projects"
-        className="max-w-6xl mx-auto px-4 py-16  md:py-30 md:mt-10 "
+        className="max-w-6xl mx-auto px-4 py-16 md:py-30 md:mt-10"
       >
         <h2 className="text-5xl font-bold mb-8 text-center text-black">
           <span className="font-light">My</span>{" "}
           <span className="font-bold">Projects</span>
         </h2>
 
-        {/* 🔹 UPPER GRID (3 columns) */}
+        {/* 🔹 UPPER GRID (3 PERFECT SQUARE CARDS) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-9 mb-16 md:py-10">
           {projects.slice(0, 3).map((project) => (
             <Link
@@ -71,24 +71,31 @@ export default function ProjectsSection() {
               rel="noopener noreferrer"
               className="inline-block relative rounded-lg shadow hover:shadow-lg transition-shadow duration-300"
             >
-              <div className="w-full h-auto relative bg-[#d9d9d9] hover:shadow-[5px_5px_0px_0px_gray] shadow-2xl text-black">
-                <img
-                  src={project.borderBox}
-                  alt={project.title}
-                  className="w-full h-full"
-                />
+              <div className="w-full aspect-square relative bg-[#d9d9d9] hover:shadow-[5px_5px_0px_0px_gray] shadow-2xl text-black overflow-hidden">
 
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-8 mt-2 md:mt-4">
-                  {project.icon && (
-                    <div className="mb-4 bg-white   flex items-center justify-center">
-                      <img
-                        src={project.icon}
-                        alt={project.title}
-                        className="w-auto h-full object-contain  hover:scale-104 transition-transform duration-300"
-                      />
-                    </div>
-                  )}
-                  <div className="w-full mb-4">
+                {/* ⭐ MAKE BORDER SQUARE */}
+                <div className="absolute inset-0 w-full h-full aspect-square">
+                  <img
+                    src={project.borderBox}
+                    alt={project.title}
+                    className="w-full h-full object-fill"
+                  />
+                </div>
+
+                {/* Inner Content */}
+                <div className="absolute inset-0 flex flex-col items-center justify-start p-8 pt-10">
+
+                  {/* INNER IMAGE SQUARE */}
+                  <div className="w-full aspect-square mb-6 bg-white flex items-center justify-center overflow-hidden">
+                    <img
+                      src={project.icon}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  {/* TITLE + DESCRIPTION */}
+                  <div className="w-full">
                     <h3 className="text-xl font-semibold text-left">
                       {project.title}
                     </h3>
@@ -96,13 +103,14 @@ export default function ProjectsSection() {
                       {project.description}
                     </p>
                   </div>
+
                 </div>
               </div>
             </Link>
           ))}
         </div>
 
-        {/* 🔹 LOWER GRID (2 columns) */}
+        {/* 🔹 LOWER GRID (2 PERFECT SQUARE CARDS) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
           {projects.slice(3).map((project) => (
             <Link
@@ -112,27 +120,30 @@ export default function ProjectsSection() {
               rel="noopener noreferrer"
               className="inline-block relative rounded-lg shadow hover:shadow-lg transition-shadow duration-300"
             >
-              <div className="w-full h-auto relative bg-[#d9d9d9] hover:shadow-[10px_10px_0px_0px_gray] shadow-2xl text-black">
-                <img
-                  src={project.borderBox}
-                  alt={project.title}
-                  className="w-full h-full"
-                />
+              <div className="w-full aspect-square relative bg-[#d9d9d9] hover:shadow-[10px_10px_0px_0px_gray] shadow-2xl text-black overflow-hidden">
 
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-8 mt-2 md:mt-8">
-                  {project.icon && (
-                    <div
-                      className={`mb-4  bg-white 
-                      }`}
-                    >
-                      <img
-                        src={project.icon}
-                        alt={project.title}
-                        className="w-auto h-full object-contain  hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                  )}
-                  <div className="w-full mb-4 md:mb-8">
+                {/* ⭐ SAME BORDER FIX */}
+                <div className="absolute inset-0 aspect-square">
+                  <img
+                    src={project.borderBox}
+                    alt={project.title}
+                    className="w-full h-full object-fill"
+                  />
+                </div>
+
+                {/* Inner Content */}
+                <div className="absolute inset-0 flex flex-col items-center justify-start p-8 pt-10">
+
+                  {/* IMAGE BOX SQUARE */}
+                  <div className="w-full aspect-square mb-6 bg-white flex items-center justify-center overflow-hidden">
+                    <img
+                      src={project.icon}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  <div className="w-full md:mb-8">
                     <h3 className="text-xl font-semibold text-left">
                       {project.title}
                     </h3>
@@ -140,6 +151,7 @@ export default function ProjectsSection() {
                       {project.description}
                     </p>
                   </div>
+
                 </div>
               </div>
             </Link>
@@ -147,11 +159,14 @@ export default function ProjectsSection() {
         </div>
 
         {/* Projects section khatam hone ke baad SVG button */}
-        <div className="flex justify-start  mt-10">
-          <Link target="_blank" href="https://www.behance.net/ranjeetkumarverma88">
+        <div className="flex justify-start mt-10">
+          <Link
+            target="_blank"
+            href="https://www.behance.net/ranjeetkumarverma88"
+          >
             <div className="relative w-60 h-10 floating-button">
               <Image
-                src="/List item.svg" // 👈 aapka SVG button
+                src="/List item.svg"
                 alt="Scroll Down"
                 fill
                 className="object-contain"
@@ -159,10 +174,11 @@ export default function ProjectsSection() {
             </div>
           </Link>
         </div>
+
       </section>
 
       {/* Decorative Line */}
-      <div className="relative mt-10  h-2 sm:h-8 w-[80%] left-[10%]">
+      <div className="relative mt-10 h-2 sm:h-8 w-[80%] left-[10%]">
         <Image
           src="/Vector 32.png"
           alt="Decorative border"

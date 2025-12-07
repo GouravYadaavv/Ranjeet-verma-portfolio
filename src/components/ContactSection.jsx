@@ -1,6 +1,13 @@
 "use client";
 
-import { FaInstagram, FaBehance, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaBehance,
+  FaLinkedinIn,
+  FaPhoneAlt,
+  FaEnvelope,
+} from "react-icons/fa";
+
 import { TypeAnimation } from "react-type-animation";
 
 const ContactSection = () => {
@@ -49,7 +56,7 @@ const ContactSection = () => {
               ></textarea>
             </div>
 
-            {/* Submit Button & Social Icons */}
+            {/* Submit Button + Socials */}
             <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 mt-6">
               <button
                 type="submit"
@@ -59,17 +66,16 @@ const ContactSection = () => {
               </button>
 
               {/* Social Icons */}
-              {/* Social Icons */}
               <div className="flex space-x-3 sm:space-x-4 h-[calc(1rem+1rem+2*16px)]">
-                {/* Placeholder height; we'll override with h-full */}
                 <a
-                  href="https://www.instagram.com/_ranjeet.verma_ux?igsh=Y2liY2k5ejB3dHAz&utm_source=qr"
+                  href="https://www.instagram.com/_ranjeet.verma_ux"
                   target="_blank"
                   aria-label="Instagram"
                   className="w-15 h-full flex items-center justify-center rounded-md border border-black bg-white text-black hover:bg-black hover:text-white transition-all duration-300"
                 >
                   <FaInstagram className="text-xl" />
                 </a>
+
                 <a
                   href="https://www.behance.net/ranjeetkumarverma88"
                   target="_blank"
@@ -78,6 +84,7 @@ const ContactSection = () => {
                 >
                   <FaBehance className="text-xl" />
                 </a>
+
                 <a
                   href="https://www.linkedin.com/in/ranjeet-kumar-verma-66a866278/"
                   target="_blank"
@@ -100,11 +107,12 @@ const ContactSection = () => {
             </span>{" "}
             for
           </h2>
+
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mt-1 md:mt-2 text-[#5100ff]">
             Something special
           </h1>
 
-          {/* 🔥 Typing Animation Section */}
+          {/* Typing Animation */}
           <div className="text-gray-600 mt-6 text-base sm:text-lg leading-relaxed h-[90px]">
             <TypeAnimation
               sequence={[
@@ -116,19 +124,27 @@ const ContactSection = () => {
             />
           </div>
 
-          <div className="mt-10 space-y-3 sm:space-y-4">
+          {/* Email + Phone with Icons */}
+          <div className="mt-10 space-y-4">
+            
+            {/* Email */}
             <a
               href="mailto:ranjeetkumarverma8811@gmail.com"
-              className="text-xl sm:text-2xl font-bold block hover:text-gray-700 transition-colors"
+              className="text-xl sm:text-2xl font-bold flex items-center space-x-3 hover:text-gray-700 transition-colors"
             >
-              ranjeetkumarverma8811@gmail.com
+              <FaEnvelope className="text-[#5100ff]" />
+              <span>ranjeetkumarverma8811@gmail.com</span>
             </a>
+
+            {/* Phone */}
             <a
               href="tel:+916205508988"
-              className="text-xl sm:text-2xl font-bold block hover:text-gray-700 transition-colors"
+              className="text-xl sm:text-2xl font-bold flex items-center space-x-3 hover:text-gray-700 transition-colors"
             >
-              +91 6205508988
+              <FaPhoneAlt className="text-[#5100ff]" />
+              <span>+91 6205508988</span>
             </a>
+
           </div>
         </div>
       </div>
